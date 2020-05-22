@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" type="text/css" href="hw3.css">
+    <title>Kang's resume</title>
+
+  </head>
+  <body >
+  
+  <video autoplay muted loop id="myVideo">
+  <source src="video/snow2.mp4" type="video/mp4" >
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content" style="overflow-y:scroll;height:100%";>
+</p>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+<div class="card">
+  <img src="image/me.jpg" alt="Kang" style="width:100%">
+  <h1>CY Kang</h1>
+  <p class="title">Student, IM</p>
+  <p>Chung Yuan Christian University</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Welcome</button></p>
+</div>
+	
+
+
+
+  <div class="w3-panel w3-leftbar w3-sand">
+    <p class="w3-xxlarge w3-serif"><i>"生活需要儀式感，才不至於無趣"</i></p>
+    <p><pre>                                                                   -李思圓	</pre></p>
+ 
+</div>
+  
+
+			<!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background: -webkit-linear-gradient(left,	#009393,#99BBFF);
+														background: -o-linear-gradient(right,		#009393,#99BBFF	);
+														background: -moz-linear-gradient(right,		#009393,#99BBFF);
+														background: linear-gradient(to right,		#009393,#99BBFF); ">關於生活 儀式</div>
+  <div class="column" onclick="openTab('b2');" style="background: -webkit-linear-gradient(left,	#004B97,#99BBFF);
+														background: -o-linear-gradient(right,		#004B97,#99BBFF	);
+														background: -moz-linear-gradient(right,	#004B97,#99BBFF);
+														background: linear-gradient(to right,		#004B97,#99BBFF);">大學目標</div>
+  <div class="column" onclick="openTab('b3');" style="ackground: -webkit-linear-gradient(left,#E38EFF,#99BBFF);
+														background: -o-linear-gradient(right,	#E38EFF,#99BBFF	);
+														background: -moz-linear-gradient(right,	#E38EFF,#99BBFF);
+														background: linear-gradient(to right,	#E38EFF,#99BBFF);">個人聯絡資訊</div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background: -webkit-linear-gradient(left,	#007979,#00FFFF	);
+														background: -o-linear-gradient(right,		#007979,#00FFFF		);
+														background: -moz-linear-gradient(right,#007979,#00FFFF	);
+														background: linear-gradient(to right,	#007979,#00FFFF	); ">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>About life</h2>
+  <p>「儀式究竟是什麼？」
+
+「它就是使某一天與其他日子不同，使某一時刻與其他時刻不同。」
+	<pre>                                                                                   -《小王子》</pre>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我認為這個世界上大多數人的生活都是庸庸碌碌，時光總是被虛度，年華逝去得毫無價值。儀式的作用，就是讓我們在日常的煩瑣中體驗到真正的愉悅。</p>
+</div>	
+
+<div id="b2" class="containerTab" style="display:none;background: -webkit-linear-gradient(left,#005AB5,#97CBFF);
+														background: -o-linear-gradient(right,	#005AB5,#97CBFF	);
+														background: -moz-linear-gradient(right,	#005AB5,#97CBFF);
+														background: linear-gradient(to right,#005AB5,#97CBFF">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>College Goals</h2>
+  <p><pre>多益800
+
+影片剪輯
+
+規律跑步
+
+考上研究所</pre></p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background: -webkit-linear-gradient(left,#5B00AE,#99BBFF);
+																	background: -o-linear-gradient(right,	#5B00AE,#99BBFF	);
+																	background: -moz-linear-gradient(right,	#5B00AE,#99BBFF);
+																	background: linear-gradient(to right,	#5B00AE,#99BBFF); 
+																		opacity:0.95">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Contact me</h2>
+  <p><pre>電話：0986-933-087
+
+地址：桃園市中壢區中北路200號中原大學
+
+Email：kangchenyuan62@gmail.com</pre></p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+        <hr>
+                <h3>報告</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-40">60%</div>
+                </div>
+                <h3>Python</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-50">50%</div>
+                </div>
+                <h3>CSS</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-50">60%</div>
+                </div>
+                <h3>英文能力</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-80">75%</div>
+                </div>
+                <h3>影片剪輯</h3>
+                <div class="bar">
+                    <div class="bar-long bar-percent-80">70%</div>
+                </div>
+				
+				<h2>Others</h2>
+
+<button class="accordion">社團活動</button>
+<div class="panel" >
+  <p>
+			<li>台南校友會
+			<li>力行自治會
+			<li>各時期籃球隊
+  </p>
+</div>
+
+<button class="accordion">工作經驗</button>
+<div class="panel">
+  <p>
+			<li>重考班工讀
+			<li>圖書館志工
+			</p>
+</div>
+
+<button class="accordion">其他課程活動</button>
+<div class="panel">
+  <p><pre><li>勤益人才訓練演講與實作課程
+<li>網路研習治理營
+<li>返鄉服務寒營
+<li>大一:企業概論 雖然一開始有些瓶頸 但最後終於順利達到合格業績 
+<li>大二:網程後端 對於程式比較差的我無疑是惡夢 但幸好有一個好隊友 可以補足我的差勁程式 我就做除了程式以外的事
+
+</pre></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+				
+
+     <aside class="side">
+		<ul>
+			<a href="https://www.facebook.com/profile.php?id=100005939797468"><img src="image/fb.jpg" width="70" height="70"></a>
+			<a href="https://instagram.com/2letters__?igshid=1kaog7lrf05is"><img src="image/ig.jpg" width="70" height="70"></a>
+			<a href="mailto:kobe010435@yahoo.com.tw"><img src="image/mail.jpg" width="70" height="70"></a>
+			<a href="https://10744249.github.io/10744249/10744249.html"><img src="image/me2.jpg" width="70" height="70"></a>
+			
+		</ul>
+	</aside>
+      
+	  
+	  <div id="con-1">
+       <section class="learn"><a name="learn">
+		<h2 font color="white">學歷背景Backgrounds</font></h2><hr>
+		<img class="learnimg" src="image/school1.jpg" width="10%" height="12%"> 2007-2012
+			成功國小CKES
+		<p><img class="learnimg" src="image/school2.jpg" width="10%" height="12%"> 2013-2015
+			黎明高中附設國中部LMJH
+		<p><img class="learnimg" src="image/school2.jpg" width="10%" height="12%"> 2016-2018
+			黎明高中LMSH<p>
+		<img class="learnimg" src="image/school3.png" width="10%" height="12%">2019-中原大學資管系CYIM
+      </div>
+    
+	<h2>大學課程活動</h2>
+
+	
+
+			
+        <div id="con-7">
+          <p class="title-1 ;text-center ;">個人聯絡資訊</p></font>
+          <hr>
+          <p class="title-2">電話：0985-923-066</p>
+          <p class="title-2">地址：桃園市中壢區中北路200號中原大學</p>
+          <p class="title-2">Email：kangchenyuan62@gmail.com</p>
+        </div>
+      </div>
+      </center>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</div>
+
+
+    </body>
+
+  </html>
